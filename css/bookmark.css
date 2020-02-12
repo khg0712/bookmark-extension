@@ -1,0 +1,8 @@
+.bookmark {
+	position: fixed;
+	height: 100px;
+	background-color: #000;
+	top: 0;
+	left: 0;
+	width: 100%;
+}

@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"name": "bookmark tool",
+	"description": "a bookmark extension for chrome",
+	"version": "1",
+	"author": "Hugo Kim",
+	"browser_action": {
+		"default_title": "title",
+		"default_popup": "index.html"
+	},
+	"permissions": ["activeTab", "http://*/*", "https://*/*"],
+	"content_scripts": [
+		{
+			"matches": ["https://www.google.com/*"],
+			"js": ["js/bookmark.js"],
+			"css": ["css/bookmark.css"]
+		}
+	],
+	"background": {
+		"scripts": ["js/background.js"],
+		"persistent": false
+	}
+}
